@@ -1,14 +1,17 @@
 {
   "name": "@ksolo/starwars-name-generator",
-  "version": "1.2.0-beta.0",
+  "version": "0.0.0-development",
   "description": "Generate random starwars names",
   "main": "src/index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KrishnaSolo/starwars-name-generator.git"
+    "url": "https://github.com/KrishnaSolo/starwars-name-generator.git"
   },
   "keywords": [
     "starwars",
@@ -24,6 +27,16 @@
   },
   "homepage": "https://github.com/KrishnaSolo/starwars-name-generator#readme",
   "dependencies": {
-    "unique-random-array": "3.0.0"
+    "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "commitizen": "4.2.5",
+    "cz-conventional-changelog": "3.3.0",
+    "mocha": "2.2.5",
+    "semantic-release": "^19.0.3"
+  },
+  "czConfig":{
+    "path":"node_modules/cz-conventional-changelog"
   }
 }
