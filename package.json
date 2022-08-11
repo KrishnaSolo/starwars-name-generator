@@ -1,5 +1,5 @@
 {
-  "name": "starwars-name-generator",
+  "name": "@ksolo/starwars-name-generator",
   "version": "1.0.0",
   "description": "Generate random starwars names",
   "main": "src/index.js",
