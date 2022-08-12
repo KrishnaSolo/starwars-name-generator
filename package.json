@@ -37,6 +37,9 @@
     "mocha": "2.2.5",
     "semantic-release": "^19.0.3"
   },
+  "release": {
+    "branches": ["main"]
+  },
   "czConfig":{
     "path":"node_modules/cz-conventional-changelog"
   }
