@@ -10,10 +10,13 @@ jobs:
           command: npm install
       - run:
           name: test
-          command: npm run test:single
+          command: npm run cover
       - run:
           name: check coverage
           command: npm run check-coverage
+      - run:
+          name: build
+          command: npm run build
       - run:
           name: report coverage
           command: npm run report-coverage
