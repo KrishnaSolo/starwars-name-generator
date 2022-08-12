@@ -12,5 +12,11 @@ jobs:
           name: test
           command: npm run test:single
       - run:
+          name: check coverage
+          command: npm run check-coverage
+      - run:
+          name: report coverage
+          command: npm run report-coverage
+      - run:
           name: release
           command: npm run semantic-release
